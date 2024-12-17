@@ -3,7 +3,8 @@ header("Content-Type: application/json");
 
 // Allow requests from specific origins
 $allowedOrigins = [
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://otakuhub-ray.vercel.app'
 ];
 
 if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowedOrigins)) {
