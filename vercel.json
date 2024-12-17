@@ -1,6 +1,0 @@
-{
-  "routes": [
-    { "src": "/proxy", "dest": "/api/login_proxy.js" }
-  ]
-}
-

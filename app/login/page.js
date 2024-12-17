@@ -18,7 +18,7 @@ export default function Login() {
 
     try {
       const response = await fetch(
-        "https://otakuhub-ray.vercel.app/login_proxy",
+        "/api/login_proxy",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
