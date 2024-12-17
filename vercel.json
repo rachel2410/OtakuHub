@@ -1,10 +1,6 @@
 {
-  "functions": {
-    "api/login_proxy.php": {
-      "runtime": "vercel-php@0.7.3"
-    }
-  },
   "routes": [
-    { "src": "/proxy", "dest": "/api/login_proxy.php" }
+    { "src": "/proxy", "dest": "/api/login_proxy.js" }
   ]
 }
+
