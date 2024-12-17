@@ -18,7 +18,7 @@ export default function Login() {
 
     try {
       const response = await fetch(
-        "http://169.239.251.102:3341/~rachel.yeboah/otakuhub/login.php",
+        "https://169.239.251.102:3341/~rachel.yeboah/otakuhub/login.php",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
