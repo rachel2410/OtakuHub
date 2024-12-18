@@ -38,7 +38,7 @@ export default function SignUpPage() {
     }
 
     try {
-      const response = await fetch("http://169.239.251.102:3341/~rachel.yeboah/otakuhub/register.php", {
+      const response = await fetch("/api/signup_proxy", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),

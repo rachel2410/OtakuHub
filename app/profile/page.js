@@ -47,7 +47,7 @@ export default function ProfilePage() {
     }
 
     try {
-      const response = await fetch("http://169.239.251.102:3341/~rachel.yeboah/otakuhub/update_password.php", {
+      const response = await fetch("/api/update_password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -71,7 +71,7 @@ export default function ProfilePage() {
 
   const handleUsernameUpdate = async () => {
     try {
-      const response = await fetch("http://169.239.251.102:3341/~rachel.yeboah/otakuhub/update_username.php", {
+      const response = await fetch("/api/update_username", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
